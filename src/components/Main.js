@@ -10,14 +10,29 @@ class Main extends Component {
         ]
            
     }
-  render() {
-    return (
-      <div>
-        <Todos todos={this.state.todos}/>
-        <AddTodo />
-      </div>
-    );
-  }
+
+    //handle user click to delete a todo
+    //get todo id to remove from list
+    //update state with new todos after user click
+    deleteTodo = (id) => {
+        let todos = this.state.todos.filter(todo => {
+            return todo.id !== id;
+        });
+
+        this.setState({todos});
+    }
+
+    render() {
+        return (
+        <div>
+            <Todos
+                todos={this.state.todos}
+                deleteTodo={this.deleteTodo}
+            />
+            <AddTodo />
+        </div>
+        );
+    }
 }
 
 export default Main;

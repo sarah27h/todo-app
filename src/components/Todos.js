@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const Todos = ({todos}) => {
+const Todos = ({todos, deleteTodo}) => {
         
     //check todos state length todos.length > 0 ?
     //if true display todos list
@@ -9,7 +9,8 @@ const Todos = ({todos}) => {
             ( 
             todos.map(todo => {
                 return(
-                    <div id={todo.id}>
+                    //pass id of clicked back to parent component as action
+                    <div key={todo.id} onClick={() => deleteTodo(todo.id)}>
                         {todo.task}
                     </div>
                 )
