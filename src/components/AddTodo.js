@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Main from './components/Main'
 
-class App extends Component {
+class AddTodo extends Component {
   render() {
     return (
       <div>
-        <Main />
+        Add New Todo
       </div>
     );
   }
 }
 
-export default App;
+export default AddTodo;
