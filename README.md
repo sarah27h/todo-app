@@ -1,44 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Todo list app
+===============================
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+* [About the Project](#about-the-project)
+* [Project Wireframe](#project-wireframe)
+* [Installing Instructions](#installing-instructions)
+* [ Offline First ](#offline-first)
+* [Credits](#credits)
+* [License](#license)
 
-### `npm start`
+## About the Project
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is a single page application built using React.js to work as an interactive Todo list. 
+- user-friendly interface
+- 100% Responsive for all screen sizes and 
+- Accessible for screen reader users with 
+- cross-browsers
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Project Wireframe
+![alt project wireframe](https://raw.githubusercontent.com/sarah27h/todo-app/master/todowireframe.png)
 
-### `npm test`
+## Installing Instructions 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- download zip folder or clone project > https://github.com/sarah27h/react-get-weather-app.git
 
-### `npm run build`
+- For develoment mode
+    - `cd` to your project directory
+    - install all project dependencies with `yarn install`
+    - open project in browser and start the development server with `yarn start`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- For production mode
+    - `cd` to your project directory
+    - install `yarn build`
+    - to serve with static Server
+    - `serve -s build`
+    - Local host at http://localhost:5000
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Offline First
 
-### `npm run eject`
+Note: Service Worker works only in production mode
+- `cd` to project directory
+- Use `serve -s build`
+- Make sure you are in online mode (offline not selected)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Credits
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React Docs https://reactjs.org/docs/getting-started.html
+- https://developer.mozilla.org/en-US/
+- Styles https://react-materialize.github.io/#/
+- wW3schools.com
+- Stackoverflow
+- Quicksand font from Google Fonts
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the terms of the <a href="https://choosealicense.com/licenses/mit/" rel="nofollow">MIT</a> license.
