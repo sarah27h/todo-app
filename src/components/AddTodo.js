@@ -6,16 +6,32 @@ class AddTodo extends Component {
     state={
         task: ''
     }
+
+    // handle input change
+    handleChange = (e) => {
+        this.setState({ task : e.target.value})
+    }
+
+    // handle form submit by user click enter
+    handleSubmit = (e) => {
+        e.preventDefault();
+
+        // pass new todo back as action to parent component <Main />
+        this.props.addTodo(this.state);
+    }
+
     render() {
         return (
         <div>
             <p>Add New Todo</p>
-            <form>
-                <label>Add New Todo</label>
+            <form onSubmit={this.handleSubmit}>
+                <label htmlFor="task">Add New Todo</label>
                 <input 
                     type="text" 
+                    id="task"
                     placeholder="Start typing here"
                     value={this.state.task}
+                    onChange={this.handleChange}
                     />
             </form>
         </div>
