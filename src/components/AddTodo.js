@@ -17,8 +17,11 @@ class AddTodo extends Component {
         e.preventDefault();
 
         // pass new todo back as action to parent component <Main />
-        this.props.addTodo(this.state);
-
+        // only if user enter data and task state not empty
+        if(this.state.task) {
+            this.props.addTodo(this.state);
+        }
+        
         // clear input after user submit
         this.setState({task: ''});
     }
@@ -35,7 +38,7 @@ class AddTodo extends Component {
                     placeholder="Start typing here"
                     value={this.state.task}
                     onChange={this.handleChange}
-                    />
+                />
             </form>
         </div>
         );
