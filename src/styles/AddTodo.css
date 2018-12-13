@@ -1,0 +1,4 @@
+.todo-form .todo-input:focus {
+    border-bottom: 1px solid #df1313 !important;
+    box-shadow: 0 1px 0 0 #df1313 !important;
+}

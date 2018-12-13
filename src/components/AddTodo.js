@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/AddTodo.css'
 
 class AddTodo extends Component {
 
@@ -28,11 +29,11 @@ class AddTodo extends Component {
 
     render() {
         return (
-        <div>
-            <p>Add New Todo</p>
+        <div className="todo-form">
             <form onSubmit={this.handleSubmit}>
                 <label htmlFor="task">Add New Todo</label>
                 <input 
+                    className="todo-input"
                     type="text" 
                     id="task"
                     placeholder="Start typing here"
