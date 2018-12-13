@@ -9,7 +9,15 @@ class AddTodo extends Component {
     render() {
         return (
         <div>
-            Add New Todo
+            <p>Add New Todo</p>
+            <form>
+                <label>Add New Todo</label>
+                <input 
+                    type="text" 
+                    placeholder="Start typing here"
+                    value={this.state.task}
+                    />
+            </form>
         </div>
         );
     }
