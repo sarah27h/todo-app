@@ -18,6 +18,9 @@ class AddTodo extends Component {
 
         // pass new todo back as action to parent component <Main />
         this.props.addTodo(this.state);
+
+        // clear input after user submit input
+        this.setState({task: ''});
     }
 
     render() {
