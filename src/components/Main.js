@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Todos from './Todos'
 import AddTodo from './AddTodo'
+import '../styles/Main.css'
+
 
 class Main extends Component {
     state={
@@ -36,7 +38,7 @@ class Main extends Component {
 
     render() {
         return (
-        <div>
+        <div className="todos-container">
             <Todos
                 todos={this.state.todos}
                 deleteTodo={this.deleteTodo}
@@ -44,6 +46,7 @@ class Main extends Component {
             <AddTodo
                 addTodo={this.addTodo}
             />
+            
         </div>
         );
     }

@@ -1,0 +1,10 @@
+.todos-container {
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+.todos-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
