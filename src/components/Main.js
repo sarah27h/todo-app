@@ -24,7 +24,7 @@ class Main extends Component {
 
     //add new todo to state
     //generate a unique id for new todo
-    //capitalize first letter of todo ennter by user
+    //capitalize first letter of new todo enterd by user
     //make copy ot todos state to use it to modify state indirectly
     //update todos state
     addTodo = (todo) => {
