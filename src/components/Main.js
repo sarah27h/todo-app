@@ -22,6 +22,18 @@ class Main extends Component {
         this.setState({todos});
     }
 
+    //add new todo to state
+    //generate a unique id for new todo
+    //capitalize first letter of todo ennter by user
+    //make copy ot todos state to use it to modify state indirectly
+    //update todos state
+    addTodo = (todo) => {
+        todo.id = new Date().getTime();
+        todo.task = todo.task.charAt(0).toUpperCase() + todo.task.slice(1);
+        let todos = [... this.state.todos, todo];
+        this.setState({todos})
+    }
+
     render() {
         return (
         <div>
@@ -29,7 +41,9 @@ class Main extends Component {
                 todos={this.state.todos}
                 deleteTodo={this.deleteTodo}
             />
-            <AddTodo />
+            <AddTodo
+                addTodo={this.addTodo}
+            />
         </div>
         );
     }
