@@ -1,0 +1,9 @@
+.todo-collection{
+    border: none;
+}
+
+.todo-collection .todo-item,
+.todo-collection .todo-item:last-child {
+    border: 1px solid #bdbdbd;
+    margin-bottom: 10px;
+}

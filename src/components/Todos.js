@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import {Collection, CollectionItem} from 'react-materialize'
+import '../styles/Todos.css'
 
 const Todos = ({todos, deleteTodo}) => {
         
@@ -10,9 +12,9 @@ const Todos = ({todos, deleteTodo}) => {
             todos.map(todo => {
                 return(
                     //pass id of clicked back to parent component as action
-                    <div key={todo.id} onClick={() => deleteTodo(todo.id)}>
+                    <CollectionItem className="todo-item" key={todo.id} onClick={() => deleteTodo(todo.id)}>
                         {todo.task}
-                    </div>
+                    </CollectionItem>
                 )
                 
             })
@@ -24,7 +26,9 @@ const Todos = ({todos, deleteTodo}) => {
     return(
         <div>
             <h3>Todo's List</h3>
-            {TodoList}
+            <Collection className="todo-collection">
+                {TodoList}
+            </Collection>
         </div>
     )
     
