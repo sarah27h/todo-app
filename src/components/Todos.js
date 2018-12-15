@@ -14,7 +14,7 @@ const Todos = ({todos, deleteTodo}) => {
                     //pass id of clicked back to parent component as action
                     <CollectionItem className="todo-item valign-wrapper" key={todo.id}>
                         {todo.task} 
-                        <Button className="btn-floating transparent remove-btn small" icon="remove" onClick={() => deleteTodo(todo.id)} />
+                        <Button className="btn-floating transparent remove-btn small" aria-label={`remove ${todo.task}`} icon="remove" onClick={() => deleteTodo(todo.id)} />
                     </CollectionItem>
                 )
                 
