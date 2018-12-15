@@ -7,3 +7,23 @@
     border: 1px solid #bdbdbd;
     margin-bottom: 10px;
 }
+
+.todo-collection .todo-item .remove-btn {
+    margin-left: auto;
+    border: 1px solid #333;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.todo-collection .todo-item .remove-btn i {
+    color: #333;
+}
+
+.todo-collection .todo-item .remove-btn:hover i {
+    color: #df1313;
+}
+
+.todo-collection .todo-item .remove-btn:hover {
+    border: 2px solid #df1313;
+}
+

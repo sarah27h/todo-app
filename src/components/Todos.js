@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Collection, CollectionItem} from 'react-materialize'
+import {Collection, CollectionItem, Button, Icon} from 'react-materialize'
 import '../styles/Todos.css'
 
 const Todos = ({todos, deleteTodo}) => {
@@ -12,8 +12,9 @@ const Todos = ({todos, deleteTodo}) => {
             todos.map(todo => {
                 return(
                     //pass id of clicked back to parent component as action
-                    <CollectionItem className="todo-item" key={todo.id} onClick={() => deleteTodo(todo.id)}>
-                        {todo.task}
+                    <CollectionItem className="todo-item valign-wrapper" key={todo.id}>
+                        {todo.task} 
+                        <Button className="btn-floating transparent remove-btn small" icon="remove" onClick={() => deleteTodo(todo.id)} />
                     </CollectionItem>
                 )
                 
