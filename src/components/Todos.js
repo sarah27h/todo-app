@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import {Collection, CollectionItem, Button, Icon} from 'react-materialize'
+import React from 'react'
+import {Collection, CollectionItem, Button} from 'react-materialize'
 import '../styles/Todos.css'
 
 const Todos = ({todos, deleteTodo, markDoneTodo}) => {
