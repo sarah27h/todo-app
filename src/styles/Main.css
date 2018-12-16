@@ -10,5 +10,6 @@
 }
 
 .line-through {
-    text-decoration: line-through solid #df1313;
+    text-decoration: line-through;  /* for support ie*/
+    text-decoration: line-through #df1313 ; /* for support other browsers*/
 }
