@@ -1,3 +1,7 @@
+//add core.js to support map array method for old browsers
+// https://reactjs.org/docs/javascript-environment-requirements.html
+import 'core-js/library/es6/map';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
