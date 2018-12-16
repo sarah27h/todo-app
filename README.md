@@ -52,7 +52,7 @@ Note: Service Worker works only in production mode
 - Styles https://react-materialize.github.io/#/
 - wW3schools.com
 - Stackoverflow
-- Quicksand font from Google Fonts
+- react-app-polyfill, core.js package
 
 ## License
 
