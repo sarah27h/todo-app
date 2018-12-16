@@ -10,7 +10,6 @@ class Main extends Component {
             {id: '1', task: 'Buy bread'},
             {id: '2', task: 'Cleans rooms'},
         ]
-           
     }
 
     //handle user click to delete a todo
@@ -22,6 +21,13 @@ class Main extends Component {
         });
 
         this.setState({todos});
+    }
+
+
+    //handle user click to mark todo as done
+    //using classList.toggle to add a line if done or remove line if not done
+    markDoneTodo = (target) => {
+        target.classList.toggle("line-through");
     }
 
     //add new todo to state
@@ -42,6 +48,7 @@ class Main extends Component {
             <Todos
                 todos={this.state.todos}
                 deleteTodo={this.deleteTodo}
+                markDoneTodo={this.markDoneTodo}
             />
             <AddTodo
                 addTodo={this.addTodo}
