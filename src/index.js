@@ -1,3 +1,6 @@
+//react-app-polyfill to support ie9, ie10, ie 11
+import 'react-app-polyfill/ie9';
+
 //add core.js to support map array method for old browsers
 // https://reactjs.org/docs/javascript-environment-requirements.html
 import 'core-js/library/es6/map';
